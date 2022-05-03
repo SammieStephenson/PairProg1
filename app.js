@@ -39,6 +39,24 @@ function vowelChecker(user) {
 
 vowelChecker(user);
 
+//Medium 2 Jalynn
+
+function anagram(x, z) {
+    let len1 = x.length;
+    let len2 = z.length;
+    if(len1 !== len2){
+       console.log('Invalid Input');
+       return
+    }
+    let str1 = x.split('').sort().join('');
+    let str2 = z.split('').sort().join('');
+    if(str1 === str2){
+       console.log("True");
+    } else { 
+       console.log("False");
+    }
+ }
+ anagram("children","nerdlihc")
 
 // Medium 3
 let num1 = prompt("Choose a 3 digit number");
