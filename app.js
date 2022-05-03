@@ -7,17 +7,17 @@ function odd() {
     console.log()
 }
 
-// // Medium 2
-// let user = prompt("Type a Letter");
-// function vowelChecker(user) {
-//     if (user === "a" || "e" || "i" || "o" || "u") {
-//         return console.log("This is a vowel");
-//     } else {
-//         return console.log("This is not a vowel");
-//     }
-// };
+// Medium 1
+let user = prompt("Type a Letter");
+function vowelChecker(user) {
+    if (user === "a" || "e" || "i" || "o" || "u") {
+        return console.log("This is a vowel");
+    } else {
+        return console.log("This is not a vowel");
+    }
+};
 
-// vowelChecker(user);
+vowelChecker(user);
 
 
 // Medium 3
