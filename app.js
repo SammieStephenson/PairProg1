@@ -1,25 +1,44 @@
 
-// Easy 1
-const numbers = [2, 4, 7, 11, 15, 16]
 
+
+// Easy 1 Sammie
+const numbers = [2, 4, 7, 11, 15, 16]
 let odd = numbers.filter(n => n % 2);
 let even = numbers.filter(n => n % 2 === 0);
 
 console.log(odd);
 console.log(even);
 
+// /Easy 2 Jalynn
+function checkPrime(numArray) {
+    const primeNumber = numArray.filter(output => {
+        if (output <= 1) {
+            return false;
+        } else {
+            for (let i = 2; i < output; i++) {
+                if (output % i == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+    });
+    console.log(`Prime number array:`, primeNumber);
+};
 
-// // Medium 1
-// let user = prompt("Type a Letter");
-// function vowelChecker(user) {
-//     if (user == "a" || "e" || "i" || "o" || "u") {
-//         return console.log("This is a vowel");
-//     } else {
-//         return console.log("This is NOT a vowel");
-//     }
-// };
 
-// vowelChecker(user);
+// Medium 1 Sammie
+let user = prompt("Type a Letter");
+function vowelChecker(user) {
+    if (user == "a" || "e" || "i" || "o" || "u") {
+        return console.log("This is a vowel");
+    } else {
+        return console.log("This is NOT a vowel");
+    }
+};
+
+vowelChecker(user);
+
 
 // //Medium 2 Jalynn
 
@@ -40,26 +59,26 @@ console.log(even);
 // }
 // anagram("children", "nerdlihc")
 
-// // Medium 3
-// let num1 = prompt("Choose a 3 digit number");
-// let num2 = prompt("Choose another 3 digit number");
-// let y = num1;
-// let x = num2;
-// let quotient = Math.floor(y / x);
-// let remainder = y % x;
+// Medium 3 Sammie
+let num1 = prompt("Choose a 3 digit number");
+let num2 = prompt("Choose a smaller 3 digit number");
+let y = num1;
+let x = num2;
+let quotient = Math.floor(y / x);
+let remainder = y % x;
 
-// function bigNumber() {
-//     if (remainder === 0) {
-//         alert(`${quotient}`)
-//     } else if (remainder > 0) {
-//         alert(`Biggest number is ${quotient} and remainder is ${remainder}`)
-//     } else {
-//         alert("Try Again")
-//     }
-// };
+function bigNumber() {
+    if (remainder === 0) {
+        alert(`${quotient}`)
+    } else if (remainder >= 1) {
+        alert(`Biggest number is ${quotient} and remainder is ${remainder}`)
+    } else {
+        alert("Try Again")
+    }
+};
 
-// bigNumber();
+bigNumber();
 
 
-// // Hard 1
+// // Hard 1 Sammie
 
