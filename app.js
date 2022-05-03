@@ -7,31 +7,6 @@ function odd() {
     console.log()
 }
 
-<<<<<<< HEAD
-=======
-
-//Easy 2 Jalynn
-function checkPrime(numArray) {
-    const primeNumber = numArray.filter(output => {
-        if (output <= 1) {
-            return false;
-        } else {
-            for (let i = 2; i < output; i++) {
-                if (output % i == 0) {
-                    return false;
-                }
-            }
-            return true;
-        }
-    });
-    console.log(`Prime number array:`, primeNumber);
-};
-
-checkPrime([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-
-      
-
->>>>>>> 57efe27b88e7a1f4f7c23a5aa1ac6b4ec910fd48
 // Medium 1
 let user = prompt("Type a Letter");
 function vowelChecker(user) {
@@ -65,9 +40,4 @@ bigNumber();
 
 
 // Hard 1
-<<<<<<< HEAD
 f
-=======
-f
-    
->>>>>>> 57efe27b88e7a1f4f7c23a5aa1ac6b4ec910fd48
