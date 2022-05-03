@@ -25,4 +25,14 @@ function checkPrime(numArray) {
 
 checkPrime([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 
-           
+
+let user = prompt("Type a Letter");
+function vowelChecker(){ 
+    if (user === a,e,i,o,u){ 
+        console.log("This is a vowel")
+    } else {
+        console.log("This is not a vowel");
+    }
+};
+        
+    
