@@ -50,22 +50,22 @@ vowelChecker(user);
 
 // //Medium 2 Jalynn
 
-// function anagram(x, z) {
-//     let len1 = x.length;
-//     let len2 = z.length;
-//     if (len1 !== len2) {
-//         console.log('Invalid Input');
-//         return
-//     }
-//     let str1 = x.split('').sort().join('');
-//     let str2 = z.split('').sort().join('');
-//     if (str1 === str2) {
-//         console.log("True");
-//     } else {
-//         console.log("False");
-//     }
-// }
-// anagram("children", "nerdlihc")
+function anagram(x, z) {
+    let len1 = x.length;
+    let len2 = z.length;
+    if (len1 !== len2) {
+        console.log('Invalid Input');
+        return
+    }
+    let str1 = x.split('').sort().join('');
+    let str2 = z.split('').sort().join('');
+    if (str1 === str2) {
+        console.log("True");
+    } else {
+        console.log("False");
+    }
+}
+anagram("children", "nerdlihc")
 
 // Medium 3 Sammie
 let num1 = prompt("Choose a 3 digit number");
@@ -139,7 +139,8 @@ function bracketPlay(str) {
 
         }
     }
-    console.log(square, round, curly)
+    return (square, round, curly)
+
 };
 
 bracketPlay(str);
@@ -147,7 +148,7 @@ bracketPlay(str);
 function message() {
     if (square === 0, round === 0, curly === 0);
     alert("True");
-} else if ((square <= -1, round <= -1, curly <= -1)) {
+} if ((square <= -1, round <= -1, curly <= -1)) {
     alert("False")
 };
 
