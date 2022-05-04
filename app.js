@@ -43,48 +43,49 @@ function vowelChecker(user) {
     } else {
         console.log("This is NOT a vowel")
     }
-
-    vowelChecker(user);
-
-
-    // //Medium 2 Jalynn
-
-    // function anagram(x, z) {
-    //     let len1 = x.length;
-    //     let len2 = z.length;
-    //     if (len1 !== len2) {
-    //         console.log('Invalid Input');
-    //         return
-    //     }
-    //     let str1 = x.split('').sort().join('');
-    //     let str2 = z.split('').sort().join('');
-    //     if (str1 === str2) {
-    //         console.log("True");
-    //     } else {
-    //         console.log("False");
-    //     }
-    // }
-    // anagram("children", "nerdlihc")
-
-    // Medium 3 Sammie
-    let num1 = prompt("Choose a 3 digit number");
-    let num2 = prompt("Choose a smaller 3 digit number");
-    let y = num1;
-    let x = num2;
-    let quotient = Math.floor(y / x);
-    let remainder = y % x;
-
-    function bigNumber() {
-        if (remainder === 0) {
-            alert(`${quotient}`)
-        } else if (remainder >= 1) {
-            alert(`Biggest number is ${quotient} and remainder is ${remainder}`)
-        } else {
-            alert("Try Again")
-        }
-    }
-    bigNumber();
 };
+
+vowelChecker(user);
+
+
+// //Medium 2 Jalynn
+
+// function anagram(x, z) {
+//     let len1 = x.length;
+//     let len2 = z.length;
+//     if (len1 !== len2) {
+//         console.log('Invalid Input');
+//         return
+//     }
+//     let str1 = x.split('').sort().join('');
+//     let str2 = z.split('').sort().join('');
+//     if (str1 === str2) {
+//         console.log("True");
+//     } else {
+//         console.log("False");
+//     }
+// }
+// anagram("children", "nerdlihc")
+
+// Medium 3 Sammie
+let num1 = prompt("Choose a 3 digit number");
+let num2 = prompt("Choose a smaller 3 digit number");
+let y = num1;
+let x = num2;
+let quotient = Math.floor(y / x);
+let remainder = y % x;
+
+function bigNumber() {
+    if (remainder === 0) {
+        alert(`${quotient}`)
+    } else if (remainder >= 1) {
+        alert(`Biggest number is ${quotient} and remainder is ${remainder}`)
+    } else {
+        alert("Try Again")
+    }
+}
+bigNumber();
+
 
 
 //Medium 4 Jalynn
@@ -109,20 +110,47 @@ car.runErrands();
 
 
 // Hard 1 Sammie 
-let text = prompt("Use brackets. Type a sentence inside of the sentence.");
-let result1 = text.includes("{, }");
-let result2 = text.includes("[, ]");
-let result3 = text.includes("(, )");
-function bracketPlay(text) {
-    if (result1 === true) {
-        alert(true)
-    } else if (result2 === true) {
-        alert(true)
-    } else if (result3 === true) {
-        alert(true)
-    } else {
-        alert(false)
+let str = prompt("Use brackets. Type a sentence inside of the sentence.");
+
+function bracketPlay(str) {
+    let square = 0
+    let curly = 0
+    let round = 0
+    for (let x of str) {
+        switch (x) {
+            case "[":
+                square++
+                break
+            case "]":
+                square--
+                break
+            case "{":
+                curly++
+                break
+            case "}":
+                curly--
+                break
+            case "(":
+                round++
+                break
+            case ")":
+                round--
+                break
+
+        }
     }
+    console.log(square, round, curly)
 };
 
-bracketPlay(string);
+bracketPlay(str);
+
+function message() {
+    if (square === 0, round === 0, curly === 0);
+    alert("True");
+} else if ((square <= -1, round <= -1, curly <= -1)) {
+    alert("False")
+};
+
+message(str);
+
+
